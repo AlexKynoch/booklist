@@ -8,5 +8,7 @@ router.post('/book/create', books.create)  //
 router.get('/book/:id', books.show)
 router.delete('/book/:id', books.delete)
 router.put('/book/:id', books.update)
+router.get('/books/:id', books.showByAuthor)
+
 
 module.exports = router;  //export everything as router
